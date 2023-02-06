@@ -16,8 +16,8 @@ body {
 #nav {
     background: #000;
     position: fixed;
-    top: 0;  
-    opacity:80%;
+    top: 0;
+    opacity: 80%;
     left: 0;
     width: 100%;
     z-index: 999px;
@@ -96,9 +96,7 @@ body {
     font-weight: lighter;
     display: block;
     white-space: nowrap;
-    /* los espacios en blanco no rompen la línea */
     width: 28ch;
-    /* el ancho será el número de caracteres que tiene nuestra línea */
     animation: escribiendo 2.5s steps(25);
     overflow: hidden;
 }
@@ -222,9 +220,10 @@ body {
 
 
 /* ----- SOBRE MÍ ----- */
-#sobre__mi{ 
+#sobre__mi {
     background-color: #000;
-    height: 500px;
+    height: 530px;
+    border-bottom: 1px solid #eb12a9;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -233,13 +232,13 @@ body {
     align-content: stretch;
 }
 
-.sobre__mi--cont{
-       margin-top: 80px;
+.sobre__mi--cont {
+    margin-top: 120px;
     margin-left: 120px;
-    margin-right: 200px;
-   
+    margin-right: 120px;
 }
-.sobre__mi--titulo{
+
+.sobre__mi--titulo {
     font-size: 60px;
     color: #ffffff;
     font-family: 'Lato', sans-serif;
@@ -247,14 +246,13 @@ body {
     letter-spacing: -0.04em;
 }
 
-.sobre__mi--linea{
-  
-        width: 375px;
-        border: 2px solid #c8ff00;
-        transform: rotate(0deg);
+.sobre__mi--linea {
+    width: 420px;
+    border: 2px solid #c8ff00;
+    transform: rotate(0deg);
 }
 
-.sobre__mi--txt{
+.sobre__mi--txt {
     padding-top: 30px;
     font-size: 15px;
     letter-spacing: 1px;
@@ -263,8 +261,56 @@ body {
     font-weight: lighter;
 }
 
-.sobre__mi--tarjeta{
+.sobre__mi--tarjeta {
     padding-top: 120px;
     padding-right: 120px;
 }
+
+
+/* ----- PORTFOLIO ---- */
+#portfolio {
+    background-color:#000;
+    height: 530px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.portfolio__cont{
+      padding-top: 170px;
+    padding-left: 80px;
+    padding-right: 50px;
+}
+
+.portfolio__titulo{
+    padding-top: 25px;
+    font-size: 60px;
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    font-weight: 750;
+    letter-spacing: -0.04em;
+}
+
+.portfolio__txt{
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    font-weight: lighter;
+}
+
+.portfolio__linea {
+    width: 200px;
+    border: 2px solid #ff8000;
+    transform: rotate(0deg);
+}
+ .portfolio__img--1{
+    padding-top: 150px;
+    padding-left: 50px;
+ }
+
+
 
