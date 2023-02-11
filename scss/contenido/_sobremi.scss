@@ -1,0 +1,46 @@
+/* ----- SOBRE MÍ ----- */
+#sobre__mi {
+    background-color: map-get($colores, secundario);
+    height: 530px;
+    border-bottom: 1px solid map-get($colores, colorBorder);
+    @extend %flexRow;
+    justify-content: space-around;
+
+    .sobre__mi--cont {
+        margin-top: 120px;
+        margin-left: 80px;
+        margin-right: 80px;
+
+        .sobre__mi--titulo {
+            font-size: 50px;
+            color: map-get($colores, terciario);
+            font-family: $tipografia;
+            font-weight: 750;
+            letter-spacing: -0.04em;
+        }
+
+        .sobre__mi--linea {
+            width: 420px;
+            border: 2px solid map-get($colores, primario);
+            transform: rotate(0deg);
+        }
+
+        .sobre__mi--txt {
+            padding-top: 30px;
+            font-size: 15px;
+            letter-spacing: 1px;
+            color: map-get($colores, terciario);
+            font-family: $tipografia;
+            font-weight: lighter;
+        }
+    }
+
+    .sobre__mi--tarjeta {
+        padding-top: 120px;
+        padding-right: 80px;
+    }
+
+    .sobre__mi--img {
+        width: 300px;
+    }
+}

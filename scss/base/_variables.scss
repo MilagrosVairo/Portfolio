@@ -1,0 +1,70 @@
+
+/* ----- Responsive ----- 
+$laptop: 1024px;
+$tablet: 770px;
+$intermedio: 650px;
+$mobileL: 430px;
+$mobileS: 400px;
+*/
+
+$tipografia: 'Lato', sans-serif;
+
+/* ----- Mapas ----- */
+$colores:(
+    primario: #CAFF00,
+    secundario: #000,
+    terciario: #ffffff,
+    colorBorder: #eb12a9,
+    bg: radial-gradient(circle, #71ff00, #ffb007, #ff8000, #ff2762, #eb12a9),
+);
+
+/* ----- Extends ----- 
+@extend %botones */
+%flexRow{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+%flexColumn{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+%flexColumnReverse{
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+%botones{
+    margin-left: 15px;
+    box-sizing: border-box;
+    width: 110px;
+    height: 35px;
+    background: linear-gradient(180deg, #000000 0%, #000000 0.01%);
+    border: 2px solid #CAFF00;
+    backdrop-filter: blur(2px);
+    border-radius: 55px;
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+}
+
+/* ----- Mixins ----- 
+
+@include mediaQuery
+*/
+@mixin mediaQuery ($pixels){
+    @media only screen and (max-width: $pixels){
+        @content
+    }
+}
+

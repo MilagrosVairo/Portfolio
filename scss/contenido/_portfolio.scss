@@ -1,0 +1,45 @@
+/* ----- PORTFOLIO ---- */
+section {
+    #portfolio {
+        background-color: map-get($colores, secundario);
+        border-bottom: 1px solid map-get($colores, colorBorder);
+        height: 530px;
+        @extend %flexColumn;
+        justify-content: space-around;
+
+        &__cont {
+            padding-top: 170px;
+            padding-left: 80px;
+            padding-right: 50px;
+
+            &portfolio__titulo {
+                padding-top: 25px;
+                font-size: 60px;
+                color: map-get($colores, terciario);
+                font-family: $tipografia;
+                font-weight: 750;
+                letter-spacing: -0.04em;
+            }
+
+            &__txt {
+                font-size: 15px;
+                letter-spacing: 1px;
+                color: map-get($colores, terciario);
+                font-family: $tipografia;
+                font-weight: lighter;
+            }
+
+            &__linea {
+                width: 200px;
+                border: 2px solid map-get($colores, primario);
+                transform: rotate(0deg);
+            }
+        }
+
+        &__img--1 {
+            padding-top: 150px;
+            padding-left: 50px;
+            width: 500px;
+        }
+    }
+}

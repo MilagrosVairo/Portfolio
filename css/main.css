@@ -1,0 +1,265 @@
+@charset "UTF-8";
+* {
+  padding: 0px;
+  margin: 0px; }
+
+html {
+  font-size: 100%; }
+
+body {
+  position: relative;
+  min-height: 100vh; }
+
+/* ----- Responsive ----- 
+$laptop: 1024px;
+$tablet: 770px;
+$intermedio: 650px;
+$mobileL: 430px;
+$mobileS: 400px;
+*/
+/* ----- Mapas ----- */
+/* ----- Extends ----- 
+@extend %botones */
+#nav .nav__cont, #sobre__mi {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  align-content: stretch; }
+
+section #portfolio {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center; }
+
+/* ----- Mixins ----- 
+
+@include mediaQuery
+*/
+/* ----- BARRA DE NAVEGACIÓN ----- */
+#nav {
+  background: #000;
+  position: fixed;
+  top: 0;
+  opacity: 80%;
+  left: 0;
+  width: 100%;
+  z-index: 999px;
+  box-shadow: 0px 0px 50px 0px #ffffff; }
+  #nav .nav__cont {
+    justify-content: space-evenly;
+    padding-left: 350px;
+    padding-right: 350px;
+    padding-top: 12px;
+    padding-bottom: 12px; }
+    #nav .nav__cont .nav__elem {
+      text-decoration: none;
+      font-size: 14px;
+      color: #ffffff;
+      font-family: "Lato", sans-serif;
+      font-weight: 500; }
+
+/* ----- INICIO ----- 
+    #inicio {
+        height: 525px;
+        left: 0px;
+        background-image: map-get($colores, bg);
+
+        .inicio__seccion {
+            padding-top: 125px;
+            @extend %flexRow;
+            justify-content: space-around;
+            align-content: stretch;
+
+            .inicio__nom {
+                font-size: 70px;
+                color: map-get($colores, terciario);
+                font-family: $tipografia;
+                font-weight: 200;
+                font-style: normal;
+            }
+
+            .inicio__ap {
+                font-size: 75px;
+                color: map-get($colores, terciario);
+                font-family: $tipografia;
+                font-weight: 750;
+                letter-spacing: -0.04em;
+            }
+
+            .inicio__ded {
+                text-align: center;
+                padding-top: 10px;
+                padding-bottom: 3px;
+                font-size: 25px;
+                letter-spacing: 7px;
+                color: map-get($colores, terciario);
+                font-family: $tipografia;
+                font-weight: lighter;
+                display: block;
+                white-space: nowrap;
+                width: 28ch;
+                animation: escribiendo 2.5s steps(25);
+                overflow: hidden;
+
+                .parpadea {
+                    animation-name: parpadeo;
+                    animation-duration: 1s;
+                    animation-timing-function: linear;
+                    animation-iteration-count: infinite;
+
+                    -webkit-animation-name: parpadeo;
+                    -webkit-animation-duration: 1s;
+                    -webkit-animation-timing-function: linear;
+                    -webkit-animation-iteration-count: infinite;
+                }
+
+                @-moz-keyframes parpadeo {
+                    0% {
+                        opacity: 1.0;
+                    }
+
+                    50% {
+                        opacity: 0.0;
+                    }
+
+                    100% {
+                        opacity: 1.0;
+                    }
+                }
+
+                @-webkit-keyframes parpadeo {
+                    0% {
+                        opacity: 1.0;
+                    }
+
+                    50% {
+                        opacity: 0.0;
+                    }
+
+                    100% {
+                        opacity: 1.0;
+                    }
+                }
+
+                @keyframes parpadeo {
+                    0% {
+                        opacity: 1.0;
+                    }
+
+                    50% {
+                        opacity: 0.0;
+                    }
+
+                    100% {
+                        opacity: 1.0;
+                    }
+                }
+
+                @keyframes escribiendo {
+                    from {
+                        width: 0;
+                    }
+                }
+
+            }
+
+            .inicio__linea {
+                width: 375px;
+                border: 2px solid map-get($colores, primario);
+                transform: rotate(0deg);
+
+                .inicio__botones {
+                    padding-top: 20px;
+
+                    .inicio__bot--1 {
+                        @extend %botones;
+                    }
+
+                    .inicio__bot--2 {
+                        @extend %botones;
+                    }
+                }
+            }
+            .inicio__cont {
+                width: 130px;
+                @extend %flexRow;
+                justify-content: space-evenly;
+                padding-top: 30px;
+            }
+
+            .text {
+                font-size: 28px;
+                font-family: helvetica;
+                font-weight: bold;
+                color: map-get($colores, primario);
+                text-transform: uppercase;
+            }
+        }
+    }
+*/
+/* ----- SOBRE MÍ ----- */
+#sobre__mi {
+  background-color: #000;
+  height: 530px;
+  border-bottom: 1px solid #eb12a9;
+  justify-content: space-around; }
+  #sobre__mi .sobre__mi--cont {
+    margin-top: 120px;
+    margin-left: 80px;
+    margin-right: 80px; }
+    #sobre__mi .sobre__mi--cont .sobre__mi--titulo {
+      font-size: 50px;
+      color: #ffffff;
+      font-family: "Lato", sans-serif;
+      font-weight: 750;
+      letter-spacing: -0.04em; }
+    #sobre__mi .sobre__mi--cont .sobre__mi--linea {
+      width: 420px;
+      border: 2px solid #CAFF00;
+      transform: rotate(0deg); }
+    #sobre__mi .sobre__mi--cont .sobre__mi--txt {
+      padding-top: 30px;
+      font-size: 15px;
+      letter-spacing: 1px;
+      color: #ffffff;
+      font-family: "Lato", sans-serif;
+      font-weight: lighter; }
+  #sobre__mi .sobre__mi--tarjeta {
+    padding-top: 120px;
+    padding-right: 80px; }
+  #sobre__mi .sobre__mi--img {
+    width: 300px; }
+
+/* ----- PORTFOLIO ---- */
+section #portfolio {
+  background-color: #000;
+  border-bottom: 1px solid #eb12a9;
+  height: 530px;
+  justify-content: space-around; }
+  section #portfolio__cont {
+    padding-top: 170px;
+    padding-left: 80px;
+    padding-right: 50px; }
+    section #portfolio__contportfolio__titulo {
+      padding-top: 25px;
+      font-size: 60px;
+      color: #ffffff;
+      font-family: "Lato", sans-serif;
+      font-weight: 750;
+      letter-spacing: -0.04em; }
+    section #portfolio__cont__txt {
+      font-size: 15px;
+      letter-spacing: 1px;
+      color: #ffffff;
+      font-family: "Lato", sans-serif;
+      font-weight: lighter; }
+    section #portfolio__cont__linea {
+      width: 200px;
+      border: 2px solid #CAFF00;
+      transform: rotate(0deg); }
+  section #portfolio__img--1 {
+    padding-top: 150px;
+    padding-left: 50px;
+    width: 500px; }

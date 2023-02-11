@@ -1,0 +1,26 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Este sitio web es un portfolio de desarrollo Front-end",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scs scss/style.scss css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "url": "git+https://github.com/MilagrosVairo/Portfolio.git"
+  },
+  "author": "Milagros Vairo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MilagrosVairo/Portfolio/issues"
+  },
+  "homepage": "https://github.com/MilagrosVairo/Portfolio#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.20"
+  }
+}
+
+
