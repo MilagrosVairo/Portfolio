@@ -1,12 +1,4 @@
 
-/* ----- Responsive ----- 
-$laptop: 1024px;
-$tablet: 770px;
-$intermedio: 650px;
-$mobileL: 430px;
-$mobileS: 400px;
-*/
-
 $tipografia: 'Lato', sans-serif;
 
 /* ----- Mapas ----- */
@@ -18,8 +10,7 @@ $colores:(
     bg: radial-gradient(circle, #71ff00, #ffb007, #ff8000, #ff2762, #eb12a9),
 );
 
-/* ----- Extends ----- 
-@extend %botones */
+/* ----- Extends ----- */
 %flexRow{
     display: flex;
     flex-direction: row;
@@ -58,13 +49,8 @@ $colores:(
     font-weight: 100;
 }
 
-/* ----- Mixins ----- 
 
-@include mediaQuery
-*/
-@mixin mediaQuery ($pixels){
-    @media only screen and (max-width: $pixels){
-        @content
-    }
-}
+
+
+
 

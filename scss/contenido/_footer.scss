@@ -1,0 +1,25 @@
+/* ----- CONTACTO ----- */
+    #contacto { 
+        padding-bottom: 30px;
+        background-color: map-get($colores, secundario);
+        height: 300px;
+        @extend %flexColumn;
+        justify-content: space-between;
+
+        .contacto__titulo {
+            padding-top: 30px;
+            font-size: 40px;
+            color: map-get($colores, terciario);
+            font-family: $tipografia;
+            font-weight: 750;
+            letter-spacing: -0.04em;
+        }
+
+        .contacto__txt {
+            font-size: 15px;
+            letter-spacing: 1px;
+            color: map-get($colores, terciario);
+            font-family: $tipografia;
+            font-weight: lighter;
+        }
+    }

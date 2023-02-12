@@ -1,139 +1,141 @@
-/* ----- INICIO ----- 
-    #inicio {
-        height: 525px;
-        left: 0px;
-        background-image: map-get($colores, bg);
+/* ----- INICIO ----- */
+#inicio {
+    height: 525px;
+    left: 0px;
+    background-image: map-get($colores, bg);
 
-        .inicio__seccion {
-            padding-top: 125px;
-            @extend %flexRow;
-            justify-content: space-around;
-            align-content: stretch;
+    #inicio__seccion {
+        padding-top: 125px;
+        @extend %flexColumn;
+        justify-content: space-around;
+        align-content: stretch;
 
-            .inicio__nom {
-                font-size: 70px;
-                color: map-get($colores, terciario);
-                font-family: $tipografia;
-                font-weight: 200;
-                font-style: normal;
+        .inicio__nom {
+            font-size: 70px;
+            color: map-get($colores, terciario);
+            font-family: $tipografia;
+            font-weight: 200;
+            font-style: normal;
+        }
+
+        .inicio__ap {
+            font-size: 75px;
+            color: map-get($colores, terciario);
+            font-family: $tipografia;
+            font-weight: 750;
+            letter-spacing: -0.04em;
+        }
+
+        .inicio__ded {
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 3px;
+            font-size: 25px;
+            letter-spacing: 7px;
+            color: map-get($colores, terciario);
+            font-family: $tipografia;
+            font-weight: lighter;
+            display: block;
+            white-space: nowrap;
+            width: 28ch;
+            animation: escribiendo 2.5s steps(25);
+            overflow: hidden;
+        }
+
+
+        .text {
+            font-size: 28px;
+            font-family: $tipografia;
+            font-weight: bold;
+            color: map-get($colores, terciario);
+            text-transform: uppercase;
+        }
+
+        .parpadea {
+            animation-name: parpadeo;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+
+            -webkit-animation-name: parpadeo;
+            -webkit-animation-duration: 1s;
+            -webkit-animation-timing-function: linear;
+            -webkit-animation-iteration-count: infinite;
+        }
+
+        @-moz-keyframes parpadeo {
+            0% {
+                opacity: 1.0;
             }
 
-            .inicio__ap {
-                font-size: 75px;
-                color: map-get($colores, terciario);
-                font-family: $tipografia;
-                font-weight: 750;
-                letter-spacing: -0.04em;
+            50% {
+                opacity: 0.0;
             }
 
-            .inicio__ded {
-                text-align: center;
-                padding-top: 10px;
-                padding-bottom: 3px;
-                font-size: 25px;
-                letter-spacing: 7px;
-                color: map-get($colores, terciario);
-                font-family: $tipografia;
-                font-weight: lighter;
-                display: block;
-                white-space: nowrap;
-                width: 28ch;
-                animation: escribiendo 2.5s steps(25);
-                overflow: hidden;
-
-                .parpadea {
-                    animation-name: parpadeo;
-                    animation-duration: 1s;
-                    animation-timing-function: linear;
-                    animation-iteration-count: infinite;
-
-                    -webkit-animation-name: parpadeo;
-                    -webkit-animation-duration: 1s;
-                    -webkit-animation-timing-function: linear;
-                    -webkit-animation-iteration-count: infinite;
-                }
-
-                @-moz-keyframes parpadeo {
-                    0% {
-                        opacity: 1.0;
-                    }
-
-                    50% {
-                        opacity: 0.0;
-                    }
-
-                    100% {
-                        opacity: 1.0;
-                    }
-                }
-
-                @-webkit-keyframes parpadeo {
-                    0% {
-                        opacity: 1.0;
-                    }
-
-                    50% {
-                        opacity: 0.0;
-                    }
-
-                    100% {
-                        opacity: 1.0;
-                    }
-                }
-
-                @keyframes parpadeo {
-                    0% {
-                        opacity: 1.0;
-                    }
-
-                    50% {
-                        opacity: 0.0;
-                    }
-
-                    100% {
-                        opacity: 1.0;
-                    }
-                }
-
-                @keyframes escribiendo {
-                    from {
-                        width: 0;
-                    }
-                }
-
-            }
-
-            .inicio__linea {
-                width: 375px;
-                border: 2px solid map-get($colores, primario);
-                transform: rotate(0deg);
-
-                .inicio__botones {
-                    padding-top: 20px;
-
-                    .inicio__bot--1 {
-                        @extend %botones;
-                    }
-
-                    .inicio__bot--2 {
-                        @extend %botones;
-                    }
-                }
-            }
-            .inicio__cont {
-                width: 130px;
-                @extend %flexRow;
-                justify-content: space-evenly;
-                padding-top: 30px;
-            }
-
-            .text {
-                font-size: 28px;
-                font-family: helvetica;
-                font-weight: bold;
-                color: map-get($colores, primario);
-                text-transform: uppercase;
+            100% {
+                opacity: 1.0;
             }
         }
+
+        @-webkit-keyframes parpadeo {
+            0% {
+                opacity: 1.0;
+            }
+
+            50% {
+                opacity: 0.0;
+            }
+
+            100% {
+                opacity: 1.0;
+            }
+        }
+
+        @keyframes parpadeo {
+            0% {
+                opacity: 1.0;
+            }
+
+            50% {
+                opacity: 0.0;
+            }
+
+            100% {
+                opacity: 1.0;
+            }
+        }
+
+        @keyframes escribiendo {
+            from {
+                width: 0;
+            }
+        }
+
+
+        .inicio__linea {
+            width: 375px;
+            border: 2px solid #c8ff00;
+            transform: rotate(0deg);
+        }
+
+        .inicio__botones {
+            padding-top: 20px;
+
+
+            .inicio__bot--1 {
+                @extend %botones;
+            }
+
+            .inicio__bot--2 {
+                @extend %botones;
+            }
+        }
+
+        .inicio__cont {
+            width: 130px;
+            @extend %flexRow;
+            justify-content: space-evenly;
+            padding-top: 30px;
+        }
     }
-*/
+}
