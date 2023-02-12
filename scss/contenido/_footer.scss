@@ -1,25 +1,54 @@
 /* ----- CONTACTO ----- */
-    #contacto { 
-        padding-bottom: 30px;
-        background-color: map-get($colores, secundario);
-        height: 300px;
-        @extend %flexColumn;
-        justify-content: space-between;
+#contacto {
+    padding-bottom: 30px;
+    background-color: map-get($colores, secundario);
+    height: 300px;
+    @extend %flexColumn;
+    justify-content: space-between;
 
-        .contacto__titulo {
-            padding-top: 30px;
-            font-size: 40px;
-            color: map-get($colores, terciario);
-            font-family: $tipografia;
-            font-weight: 750;
-            letter-spacing: -0.04em;
+    .contacto__titulo {
+        padding-top: 30px;
+        font-size: 40px;
+        color: map-get($colores, terciario);
+        font-family: $tipografia;
+        font-weight: 750;
+        letter-spacing: -0.04em;
+    }
+
+    .contacto__txt {
+        font-size: 15px;
+        letter-spacing: 1px;
+        color: map-get($colores, terciario);
+        font-family: $tipografia;
+        font-weight: lighter;
+    }
+}
+
+/* ----- MediaQuerys ----- */
+@media screen and (max-width: $laptop) {
+    #contacto {
+        height: 250px;
+
+        & .contacto__titulo {
+            font-size: 30px;
         }
 
-        .contacto__txt {
-            font-size: 15px;
-            letter-spacing: 1px;
-            color: map-get($colores, terciario);
-            font-family: $tipografia;
-            font-weight: lighter;
+        & .contacto__txt {
+            font-size: 13px;
         }
     }
+}
+
+@media screen and (max-width: $intermedio) {
+    #contacto {
+        height: 220px;
+
+        & .contacto__titulo {
+            font-size: 27px;
+        }
+
+        & .contacto__txt {
+            font-size: 12px;
+        }
+    }
+}

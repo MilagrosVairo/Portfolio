@@ -139,3 +139,54 @@
         }
     }
 }
+
+/* ----- MediaQueys ----- */
+@media screen and (max-width: $laptop) {
+    #inicio #inicio__seccion {
+        height: 438px;
+        padding-top: 90px;
+
+        & .inicio__nom {
+            font-size: 55px;
+        }
+
+        & .inicio__ap {
+            font-size: 60px;
+        }
+    }
+}
+
+@media screen and (max-width: $tablet) {
+    #inicio #inicio__seccion {
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: $intermedio) {
+    #inicio #inicio__seccion {
+        padding-top: 100px;
+    }
+}
+
+
+@media screen and (max-width: $mobileS) {
+    #inicio #inicio__seccion {
+        padding-top: 90px;
+
+        & .inicio__nom {
+            font-size: 45px;
+        }
+
+        & .inicio__ap {
+            font-size: 50px;
+        }
+        & .inicio__linea {
+            width: 280px;
+        }
+    
+        & .inicio__ded {
+            font-size: 19px;
+            letter-spacing: 3px;
+        }
+    }
+}

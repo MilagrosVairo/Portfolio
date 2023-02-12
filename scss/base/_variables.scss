@@ -1,9 +1,16 @@
+/* ----- Responsive ----- */
+$laptop: 1024px;
+$tablet: 770px;
+$intermedio: 650px;
+$mobileL: 600px;
+$mobileS: 400px;
 
-$tipografia: 'Lato', sans-serif;
+
+$tipografia: 'Lato',
+sans-serif;
 
 /* ----- Mapas ----- */
-$colores:(
-    primario: #CAFF00,
+$colores:(primario: #CAFF00,
     secundario: #000,
     terciario: #ffffff,
     colorBorder: #eb12a9,
@@ -11,31 +18,31 @@ $colores:(
 );
 
 /* ----- Extends ----- */
-%flexRow{
+%flexRow {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: stretch;
     align-content: stretch;
-}
+};
 
-%flexColumn{
+%flexColumn {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
-}
+};
 
-%flexColumnReverse{
+%flexColumnReverse {
     display: flex;
     flex-direction: column-reverse;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     align-content: center;
-}
+};
 
-%botones{
+%botones {
     margin-left: 15px;
     box-sizing: border-box;
     width: 110px;
@@ -47,10 +54,4 @@ $colores:(
     color: #ffffff;
     font-family: 'Lato', sans-serif;
     font-weight: 100;
-}
-
-
-
-
-
-
+};
