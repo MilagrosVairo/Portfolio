@@ -143,9 +143,7 @@
 /* ----- MediaQueys ----- */
 @media screen and (max-width: $laptop) {
     #inicio #inicio__seccion {
-        height: 438px;
-        padding-top: 90px;
-
+        
         & .inicio__nom {
             font-size: 55px;
         }
@@ -153,12 +151,6 @@
         & .inicio__ap {
             font-size: 60px;
         }
-    }
-}
-
-@media screen and (max-width: $tablet) {
-    #inicio #inicio__seccion {
-        height: 400px;
     }
 }
 

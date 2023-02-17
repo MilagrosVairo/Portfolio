@@ -7,7 +7,7 @@
     justify-content: space-around;
 
     .portfolio__cont {
-        padding-top: 170px;
+        padding-top: 120px;
         padding-left: 80px;
         padding-right: 50px;
 
@@ -149,26 +149,25 @@
             & .portfolio__txt {
                 font-size: 12px;
                 line-height: 1.5;
-
-                p.portfolio__txt {
-                    padding-top: 20px;
-                }
+                padding-top: 20px;
             }
 
             & .portfolio__titulo {
                 padding-top: 10px;
-                padding-bottom: 10px;
+                padding-bottom: 0px;
+                text-align: center;
             }
 
             & .portfolio__linea {
                 width: 240px;
+                margin: 0 auto;
+
             }
         }
 
         & .portfolio__img--1 {
             width: 330px;
             padding: 30px;
-            padding-top: 10px;
         }
     }
 }
